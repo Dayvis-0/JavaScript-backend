@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Alcance de bloque</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h2 class="text">Alcance de bloque</h2>
+    <div class="content">
+        <p><strong>Ejemplo:</strong></p>
+        <div id="out1"></div>
+        <div id="out2"></div>
+        <div id="out3"></div>
+        <p>Por que el primero y el segundo causa error? <br>
+        Es que cada vez que tiene un conjunto de corchetes rizados como declaración if anterior, es
+        lo que se conoce a <strong>bloque.</strong> <br>
+        Se puede pensar en esos soportes como puertas. Esas puertas mmantienen variables dentro. <br>
+        Cada vez que se crean algo dentro de estas puertas, no se les permite salir de las puertas </p>
+        <p><strong>Ejemplo:</strong></p>
+        <div id="out4"></div>
+        <p>Lo que hace esto es crear una variable en el alcance global</p>
+        <p><strong>Ejemplo:</strong></p>
+        <div id="out5"></div>
+        <p>Aqui tenemos dos alcances, uno que es el alcance de función y luego tenemos el alcance de bloque</p>
+        <p><strong>Ejemplo:</strong></p>
+        <div id="out6"></div>
+        <p>Muestra 10 porque var, por lo tanto, se filtra afuera <br>
+        Para que no muetre el i con un valor, simplemente haciendolo <strong>let</strong> variable, ese aleatorio
+        <strong>i</strong> ya no estará flotando porque buscará en lo soportes rizados</p>
+        <p><strong>Importante</strong> <br> <strong><code>var</code></strong> variables no tiene un alcance de bloque, son un alcance función <br>
+            Esto significa que están desponibles dentro del is <code>isCool()</code> función</p>
+        <p> ¡! <br>El alcance del bloque es una de las razones por las que la gente dice usar <strong><code>const</code></strong>
+            por defecto, <strong><code>let</code></strong> cuando quieras volver a asignarlo y no lo uses <strong><code>var
+            </code></strong> a menos que haya un caso de uso especifico para ello</p>
+        <p><strong>Ejemplo:</strong></p>
+        <div id="out7"></div>    
+    </div>
+    <script src="3. Alcance de bloque.js"></script>
+    <style>
+        :root {
+            background: radial-gradient(circle, #fff, #bbb);
+        }
+        .text {
+            text-align: center;
+        }
+        .content {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>    
+</body>
+</html>

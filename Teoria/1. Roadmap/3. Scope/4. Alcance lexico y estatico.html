@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Alcance lexico y estatico</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h2 class="text">Alcance lexico y estatico</h2>
+    <div class="content">
+        <h3>Ejemplo:</h3>
+        <div id="out"></div>
+        <p>Por que muestra snickers y no sunny, cuando llamamos dog o logDog? <br>
+        Aunque corrimos el <code>logDog()</code> función del <code>go()</code> función y esa
+        función tiene una variable de alcance establecida en el valor de sunny, esta registrando snickers <br>
+        Eso es porque JS tiene lo que se conoce como <strong>alcance léxico</strong> o <strong>alcance
+        estático</strong> <br> Lo que eso significa es la forma en que ocurre la búsqueda variable o la 
+        búsqueda de alcance, es donde se definen las funciones, no donde se ejecutan.</p>
+        <h3>Ejemplo:</h3>
+        <div id="out1"></div>    
+        <p>Ahora muestra Rufus por que? <br>
+        Esto es porque nua función toma como un argumento, hará que las variables locales dentro dee esa
+        función nombren lo que sea que haya nombrado al parametro, y luego eso esta diponible para ellos</p>
+    </div>
+    <script src="4. Alcance lexico y estatico.js"></script>
+    <style>
+        :root {
+            background: radial-gradient(circle, #fff, #bbb);
+        }
+        .text {
+            text-align: center;
+        }
+        .content {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Alcance de la funcion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h2 class="text">Alcance de la funcion</h2>
+    <div class="content">
+        <h4>Ejemplo:</h4>
+        <div id="out"></div>
+        <div id="out1"></div>
+        <p>Este es el tip de alcance  que se llama <strong>alcance de función</strong> <br>
+            La segunda muestra causa error porque, la variable esta dentro de la funcion.
+            Cuando la variable esta dentro de la funcion solo estan disponibles dentro de esa funcion
+        </p>
+        <h4>Ejemplo:</h4>
+        <div id="out2"></div>
+        <p>Por que esto si muestra?<br>
+        Las variables, si no se encuentran dentro de la función, subirán un nivel más alto y buscarán
+        una variable en ese alcance. Si no está disponible en ese alcance, subirá un nivel más alto</p>
+    </div>
+    <script src="2. Alcance de la funcion.js"></script>
+    <style> 
+        :root {
+            background: radial-gradient(circle, #fff, #bbb);
+        }
+        .text {
+            text-align: center;
+        }
+        .content {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+</body>
+</html>

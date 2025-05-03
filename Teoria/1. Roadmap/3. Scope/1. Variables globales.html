@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Scope</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h3>Variables globales</h3>
+    <div class="content">
+        <p>¿Qué es el alcance? Alcance responde a la pregunta "dónde están mis variables y funciones disponibles para mí?".</p>
+        <div id="out"></div>
+        <div id="out1"></div>
+        <div id="out2"></div>
+        <p>Como se puede ver cuando sollo se muestra, muestra el valor de la variable <br>
+        Pero cuando se usa el <strong>window</strong>, first y second muestra undefined, pero age no <br>
+        ¿Por que sucede esto? <br>
+        Esto pasa porque, <strong>var</strong> las variables están adjuntas a la <strong>window</strong> objeto y son globalmente
+        scoped, y <strong>const</strong> y <strong>let</strong> las variables cuando se declararn como el ejemplo anterior
+        todavia se exploran globalmente, simplemente no estan unidas a la ventana. <br>
+        Lo mismo va a suceder con las funciones</p>
+    </div>
+    <script src="1. Variables globales.js"></script>
+    <style>
+        :root {
+            background: radial-gradient(circle, #fff, #bbb);
+        }
+        .content {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        h3 {
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

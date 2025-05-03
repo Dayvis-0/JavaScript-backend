@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Hoisting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h2 class="texto">Hoisting</h2>
+    <div class="content">
+        <p> Las declaraciones de variables y funciones son fisicamente movidas al comienzo del codigo, pero no es lo que ocurrre
+            en realidad. Lo que sucede es que las declaraciones de variables y funciones son <strong>asignadas en memoria</strong>
+            durante la fase de <b>compilación</b>, pero quedan exactamente en dónde llas has escrito en el código </p>
+        <h3>Ejemplo:</h3>
+        <div id="cat"></div>
+        <div id="cat1"></div>
+
+        <p>En la primera muestra, primero se hace la funcion despues se llama <br>
+            En la segunda muestra, primero se llama y despues se hace la función <br>
+            Como se puede observar, aunque llamamos a la función en el codigo, antes que sea escrita esto funciona.
+            Esto sucede por la manera en el que el contexto de ejecución trabaja en JS</p>
+        <h3>Ejemplo</h3>
+        <div id="other"></div>
+        <div id="other1"></div>
+        <p>Como se puede ver la primera salida tiene undefined, esto quiere que ya esta creada, pero no tiene valor. <br>
+            En la segunda ya se se le asigno un valor. <br>
+            Esto solo funciona con un tipo <b>var</b>, ya que este se eleva, y se inicializa inmediatamente con (undefined), por otro lado
+            <strong>let</strong> y <strong>const</strong> tambien eleva, pero no se inicializa inmediatamente.</p>
+        <h3>Ejemplo:</h3>
+        <h4>JS sólo utiliza el hoisting en declaraciones, no en inicializaciones</h4>
+        <div id="other2"></div>
+        <p>Como se puede observar. Si esta utilizando una variable que es declarad e inicializada despues de usarla, el
+            valor sera undefined</p>
+    </div>
+    <script src="Hoisting.js"></script>
+    <style>
+        :root {
+            background: radial-gradient(circle, #fff, #bbb);
+        }
+        .texto {
+            text-align: center;
+        }
+        .content {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+</body>
+</html>
