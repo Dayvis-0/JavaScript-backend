@@ -1,5 +1,6 @@
 const out = document.getElementById("out");
 const out1 = document.getElementById("out1");
+const out2 = document.getElementById("out2");
 
 const dog = 'snickers';
 
@@ -20,7 +21,7 @@ const dog1 = 'snickers1';
 
 function logDog1 (dog) {
     console.log(dog);
-    out1.textContent = `dog de loDog1: ${dog}`;
+    out1.textContent = `dog de logDog1: ${dog}`;
 }
 
 function go1 () {
@@ -29,3 +30,13 @@ function go1 () {
 }
 
 go1();
+
+function sayHi(name) {
+    function yell () {
+        out2.textContent = `name desde yell: ${name.toUpperCase()}`;
+    }
+
+    yell();
+}
+
+sayHi("wes");

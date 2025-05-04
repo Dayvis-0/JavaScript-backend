@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tipos de datos primitivos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h3 class="text">Tipos de datos primitivos</h3>
+    <p><strong>¿Que es un tipo de dato?</strong> <br>Un tipo de dato describe a <strong>conjunto de valores</strong>
+    y las <strong>operaciones</strong> posibles sobre esos valores <br><strong>¿Que es un tipo de dato primitivo?</strong>
+    <br>Un tipo de dato primitivo es una de las formas mas simples de datos</p>
+    <li><strong><code>Number</code></strong></li>
+    <p>El tipo de datos <code>number</code> engloba a entero es un numero entero sin un punto decimal.Es de 64 bits</p>
+    <div id="out"></div>
+    <p>flotante es un numero con punto decimal </p>
+    <div id="out1"></div>
+    <p>+infinity es un valor numerico que representa infinito </p>
+    <div id="out2"></div>
+    <p>-infinity es un valor numerico que representa menos infinito </p>
+    <div id="out3"></div>
+    <p>y NaN es un valor que representa Not-a-Number</p>
+    <div id="out4"></div>
+    <div id="out5"></div>
+    <div id="out6"></div>
+    <div id="out7"></div>
+    <li><strong><code>BigInt</code></strong></li>
+    <p>Representan valores numéricos que son muy grandes para ser representados por el primitivo <code>number</code>
+    <br>Un bigint es un primitivo, creado al anexar <code>n</code> al final de un literal entero o llamando a una funcion BigInt()</p>
+    <div id="out8"></div>
+    <div id="out9"></div>
+    <li><strong><code>String</code></strong></li>
+    <p>Se utilizan para representar datos textuales. Es un conjunto de "elementos" de valores enteros sin signo de 16 bits</p>
+    <div id="out10"></div>
+    <div id="out11"></div>
+    <p><strong>Acceder</strong><br>Se puede acceder a un caracter indiviual en una cadena. <br>La primera es con el metodo charAt() 
+    y la otra es tratarlo como un arreglo, donde los caracteres indiviuales corresponden a un indice numerico</p>
+    <div id="out12"></div>
+    <div id="out13"></div>
+    <p><strong>Comparar</strong> <br>Se puede comparar con operades de menor que o mayor que</p>
+    <div id="out14"></div>
+    <li><strong><code>Boolean</code></strong></li>
+    <p>Es un dato logico que solo puede tener los valores true o false</p>
+    <div id="out15"></div>
+    <div id="out16"></div>
+    <p>Objeto boolean <br>El valor pasado como primer parametro se convierte en booleano, si es necesario.</p>
+    <div id="out17"></div>
+    <p>Si el primer valor se omite o es 0, -0, null, false, NaN, undefined, o la cadena vacia (""), el objeto tiene nu valor de false: </p>
+    <div id="out18"></div>
+    <div id="out19"></div>
+    <p>Todo lo demas valores, incluido cualquier objeto, un arreglo vacio([]) o la cadena "false", crea un objeto con un valor incial 
+    de true.<br> <strong>Cualquier</strong> objeto cuyo valor no sea undefined o null, incluido Boolean cuyo valor es false, <br>
+    se evalua como <strong>true</strong> cuando se pasas a una declaracion condicional</p>
+    <div id="out20"></div>
+    <div id="out21"></div>
+    <p>Este comportamiento no se aplica a los booleans primitivos</p>
+    <p><strong>No utilices un objeto boolean para convertir un valor no booleano en un valor no booleano. Para realizar esta tarea,<br>
+    en su lugar,  usa <code>boolean</code> como funcion, o un operador <code>NOT</code> doble, ya que el objeto boolean <br>
+    devuelve un objeto, no un valor boolean primitivo y ese objeto siempre es Truty (se comporta como true en condicionales)</strong></p>
+    <li><strong><code>Symbol</code></strong></li>    
+    <li><strong><code>Undefined</code></strong></li>    
+    <li><strong><code>Null</code></strong></li>    
+    <div></div>
+    <script src="1. Tipos primitivos.js"></script>
+    <style>
+        :root {
+            background: radial-gradient(circle, #fff, #bbb);
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .text {
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
